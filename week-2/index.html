@@ -1,0 +1,33 @@
+<html>
+  <head></head>
+    <body>
+      <!-- GET is for reading without writing for retrieval; it's not very secure -->
+      <!-- POST modify/create things; it is also for encryption and security (if you want to hide what they typed -->
+      <form action="./form-submit.html" method="POST">
+        <!--label describes the input-->
+        <!--for is for screenreaders -->
+        <!-- and it links to the id in an input -->
+        <label for = "firstName">First Name:</label>
+        <input id="firstName" type="text">
+        
+        <label for="lastName">Last Name: </label>
+        <input id ="lastName" type= "text" placeholder="Last Name goes here..." required>
+        
+        <input type="password">
+        
+        <label for ="cell-phone-number">Cell Phone:</label>
+        <!-- type = tel -- on desktop the autocomplete is for phone numbers and on mobile it brings up the number pad -->
+        <input id="cell-phone-number" type="tel" required>
+        
+        <label for="color"> Color: </label>
+        <input id="color" type="color">
+        
+        <input type="file">
+        
+        <label for="email">Email: </label>
+        <input id="email" type ="email">
+        
+        <input type="submit" value="Submit this form">
+      </form>
+    </body>
+</html>

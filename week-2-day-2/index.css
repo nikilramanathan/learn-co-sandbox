@@ -1,0 +1,100 @@
+#grey-paragraph {
+  color: grey;  
+}
+
+.red-paragraph {
+  color: orange;  
+}
+
+p {
+  color: yellow;
+  background-color: purple;
+  font-family: 'Felipa', 'Helvetica Nueue', 'Arial', 'Times New Roman';
+}
+
+h2 {
+  color: blanchedalmond;
+}
+
+a {
+  color: mistyrose;
+}
+
+/* 1. Inline styles trump , except for !important */
+/* 2. For <style> tags and <link> whatever comes last will be applied */
+/* 3. CSS is selective -- if one thing is not specified (like background-color), it's going to apply background-color from the other places that have it */
+
+
+
+/* 
+ids trump classes (should only be 1 to a page)
+classes trump tags selectors
+tags selectors are bottom of the hierarchy
+*/
+
+/* What we learned today /*
+
+
+[selector] {
+  [rule]: [value];
+  [rule]: [value];
+}
+
+.class-name, #id-name, p, body 
+
+/* Hierarchy
+1. ids
+2. class
+3. tags */
+
+<p class="my-class" id="my-id">Here I am </p>
+
+p{
+  color: cadetblue !important;
+  
+}
+.my-class {
+  background: white;
+}
+
+#my-id {
+  color: red;
+}
+
+
+/* descendant */
+article p {
+  
+}
+
+/* child */
+article > p
+<article>
+<p></p>
+<div>
+<p></p> <-- grandchild
+</div>
+
+/* pseudo selector */
+a: hover {
+  
+}
+
+
+/* Attribute selector */
+input[type="text"] {
+<input type="text"></input>
+<input type="date"></input>
+}
+
+/* Multiple selector */
+h1, h2, p, html, div, span {
+  color: red;
+}
+
+/* Universal selector */
+* { 
+  
+}
+
+
